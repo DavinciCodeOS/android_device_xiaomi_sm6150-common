@@ -141,6 +141,9 @@ PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    hw.fm.internal_antenna=true
+
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram
